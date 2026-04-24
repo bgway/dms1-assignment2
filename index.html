@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<title>
+    MY WEBSITE YIPPEEEE
+</title>
+</head>
+
+<body>
+<p>
+    website website website text <br>
+    line numba 2 for reeeeal I just used the <b>break </b> feature and then I just used the bold feature too!
+    <img src="img/WallE.png" width="200">
+</p>
+</body>
+
+<html>
+
+<style>
+    .row{
+        width:720px;
+        margin: 10px auto 10px auto ;
+    }
+    .image-container {
+        display: table-cell;
+        vertical-align: middle;
+        padding:20px;
+    }
+</style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+
+    <div class="row">
+        <div class="image-container"><img id="wm1" src="img/Windmill1.png" onmouseover="this.src='img/Windmill2.png';" onmouseout="this.src='img/Windmill1.png';" height="240" width="200"/></div>
+        <div class="image-container"><img id="wm2" src="img/Windmill2.png" onmouseover="this.src='img/Windmill1.png';" onmouseout="this.src='img/Windmill2.png';" height="240" width="200"/></div>
+        <div class="image-container"><img id="squ" src="img/squ.png" onmouseover="this.src='img/hex.png';" onmouseout="this.src='img/squ.png';" height="200" width="200"/></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="hex" src="img/hex.png" onmouseover="this.src='img/rec.png';" onmouseout="this.src='img/hex.png';" height="200" width="200"/></div>
+        <div class="image-container"><img id="rec" src="img/rec.png" onmouseover="this.src='img/sta.png';" onmouseout="this.src='img/rec.png';" height="200" width="200"/></div>
+        <div class="image-container"><img id="sta" src="img/sta.png" onmouseover="this.src='img/trr.png';" onmouseout="this.src='img/sta.png';" height="200" width="200"/></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img id="trr" src="img/trr.png" onmouseover="this.src='img/sqr.png';" onmouseout="this.src='img/trr.png';" height="200" width="200"/></div>
+        <div class="image-container"><img id="sqr" src="img/sqr.png" onmouseover="this.src='img/her.png';" onmouseout="this.src='img/sqr.png';" height="200" width="200"/></div>
+        <div class="image-container"><img id="her" src="img/her.png" onmouseover="this.src='img/cir.png';" onmouseout="this.src='img/her.png';" height="200" width="200"/></div>
+    </div>
+
+    <script>
+        var sound1 = new buzz.sound("sound/FingerSnap.mp3");
+
+        window.onload = function(){
+            document.getElementById('cir').addEventListener('click', function () {sound1.play();});
+            document.getElementById('tri').addEventListener('click', function () {sound1.play();});
+            document.getElementById('squ').addEventListener('click', function () {sound1.play();});
+            document.getElementById('hex').addEventListener('click', function () {sound1.play();});
+            document.getElementById('rec').addEventListener('click', function () {sound1.play();});
+            document.getElementById('sta').addEventListener('click', function () {sound1.play();});
+            document.getElementById('trr').addEventListener('click', function () {sound1.play();});
+            document.getElementById('sqr').addEventListener('click', function () {sound1.play();});
+            document.getElementById('her').addEventListener('click', function () {sound1.play();});
+        };
+    </script>
+
+</body>
+
+</html>
