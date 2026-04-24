@@ -2,19 +2,8 @@
 
 <head>
 <title>
-    MY WEBSITE YIPPEEEE
+    Origins of Modern Energy Sources
 </title>
-</head>
-
-<body>
-<p>
-    website website website text <br>
-    line numba 2 for reeeeal I just used the <b>break </b> feature and then I just used the bold feature too!
-    <img src="img/WallE.png" width="200">
-</p>
-</body>
-
-<html>
 
 <style>
     .row{
@@ -54,10 +43,13 @@
 
     <script>
         var sound1 = new buzz.sound("sound/FingerSnap.mp3");
+        var sound2 = new buzz.sound("sound/WindRush.mp3");
 
         window.onload = function(){
-            document.getElementById('wd1').addEventListener('click', function () {sound1.play();});
-            document.getElementById('wd2').addEventListener('click', function () {sound1.play();});
+            document.getElementById('wd1').addEventListener('mouseover', function () {sound2.play();});
+            document.getElementById('wd1').addEventListener('mouseout', function () {sound2.play();});
+            document.getElementById('wd2').addEventListener('mouseover', function () {sound2.play();});
+            document.getElementById('wd2').addEventListener('mouseout', function () {sound2.play();});
             document.getElementById('squ').addEventListener('click', function () {sound1.play();});
             document.getElementById('hex').addEventListener('click', function () {sound1.play();});
             document.getElementById('rec').addEventListener('click', function () {sound1.play();});
