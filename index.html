@@ -35,29 +35,29 @@
 <body style="background-color: rgb(255, 255, 255);">
 
     <div class="row">
-        <div class="image-container"><img id="wm1" src="img/Windmill1.png" onmouseover="this.src='img/Windmill2.png';" onmouseout="this.src='img/Windmill1.png';" height="240" width="200"/></div>
-        <div class="image-container"><img id="wm2" src="img/Windmill2.png" onmouseover="this.src='img/Windmill1.png';" onmouseout="this.src='img/Windmill2.png';" height="240" width="200"/></div>
-        <div class="image-container"><img id="squ" src="img/squ.png" onmouseover="this.src='img/hex.png';" onmouseout="this.src='img/squ.png';" height="200" width="200"/></div>
+        <div class="image-container"><img id="wd1" src="img/UncWind1.png" onmouseover="this.src='img/Windmill2.png';" onmouseout="this.src='img/UncWind1.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="wd2" src="img/UncWind2.png" onmouseover="this.src='img/Windmill1.png';" onmouseout="this.src='img/UncWind2.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="squ" src="img/squ.png" onmouseover="this.src='img/hex.png';" onmouseout="this.src='img/squ.png';" height="300" width="300"/></div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img id="hex" src="img/hex.png" onmouseover="this.src='img/rec.png';" onmouseout="this.src='img/hex.png';" height="200" width="200"/></div>
-        <div class="image-container"><img id="rec" src="img/rec.png" onmouseover="this.src='img/sta.png';" onmouseout="this.src='img/rec.png';" height="200" width="200"/></div>
-        <div class="image-container"><img id="sta" src="img/sta.png" onmouseover="this.src='img/trr.png';" onmouseout="this.src='img/sta.png';" height="200" width="200"/></div>
+        <div class="image-container"><img id="hex" src="img/hex.png" onmouseover="this.src='img/rec.png';" onmouseout="this.src='img/hex.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="rec" src="img/rec.png" onmouseover="this.src='img/sta.png';" onmouseout="this.src='img/rec.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="sta" src="img/sta.png" onmouseover="this.src='img/trr.png';" onmouseout="this.src='img/sta.png';" height="300" width="300"/></div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img id="trr" src="img/trr.png" onmouseover="this.src='img/sqr.png';" onmouseout="this.src='img/trr.png';" height="200" width="200"/></div>
-        <div class="image-container"><img id="sqr" src="img/sqr.png" onmouseover="this.src='img/her.png';" onmouseout="this.src='img/sqr.png';" height="200" width="200"/></div>
-        <div class="image-container"><img id="her" src="img/her.png" onmouseover="this.src='img/cir.png';" onmouseout="this.src='img/her.png';" height="200" width="200"/></div>
+        <div class="image-container"><img id="trr" src="img/trr.png" onmouseover="this.src='img/sqr.png';" onmouseout="this.src='img/trr.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="sqr" src="img/sqr.png" onmouseover="this.src='img/her.png';" onmouseout="this.src='img/sqr.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="her" src="img/her.png" onmouseover="this.src='img/cir.png';" onmouseout="this.src='img/her.png';" height="300" width="300"/></div>
     </div>
 
     <script>
         var sound1 = new buzz.sound("sound/FingerSnap.mp3");
 
         window.onload = function(){
-            document.getElementById('wm1').addEventListener('click', function () {sound1.play();});
-            document.getElementById('wm2').addEventListener('click', function () {sound1.play();});
+            document.getElementById('wd1').addEventListener('click', function () {sound1.play();});
+            document.getElementById('wd2').addEventListener('click', function () {sound1.play();});
             document.getElementById('squ').addEventListener('click', function () {sound1.play();});
             document.getElementById('hex').addEventListener('click', function () {sound1.play();});
             document.getElementById('rec').addEventListener('click', function () {sound1.play();});
