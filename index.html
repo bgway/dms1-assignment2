@@ -24,39 +24,46 @@
 <body style="background-color: rgb(99, 223, 242);">
 
     <div class="row">
-        <div class="image-container"><img id="wd1" src="img/UncWind1.png" onmouseover="this.src='img/UncWind2.png';" onmouseout="this.src='img/UncWind1.png';" height="300" width="300"/></div>
-        <div class="image-container"><img id="wd2" src="img/UncWind2.png" onmouseover="this.src='img/UncWind1.png';" onmouseout="this.src='img/UncWind2.png';" height="300" width="300"/></div>
-        <div class="image-container"><img id="squ" src="img/squ.png" onmouseover="this.src='img/hex.png';" onmouseout="this.src='img/squ.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="hydro" src="img/Hydro1.png" onclick="this.src='img/Hydro2.png';" onmouseout="this.src='img/Hydro1.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="tidal" src="img/Tidal1.png" onclick="this.src='img/Tidal2.png';" onmouseout="this.src='img/Tidal1.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="geothermal" src="img/Geothermal1.png" onclick="this.src='img/Geothermal2.png';" onmouseout="this.src='img/Geothermal1.png';" height="300" width="300"/></div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img id="hex" src="img/hex.png" onmouseover="this.src='img/rec.png';" onmouseout="this.src='img/hex.png';" height="300" width="300"/></div>
-        <div class="image-container"><img id="rec" src="img/rec.png" onmouseover="this.src='img/sta.png';" onmouseout="this.src='img/rec.png';" height="300" width="300"/></div>
-        <div class="image-container"><img id="sta" src="img/sta.png" onmouseover="this.src='img/trr.png';" onmouseout="this.src='img/sta.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="solar" src="img/Solar1.png" onclick="this.src='img/Solar2.png';" onmouseout="this.src='img/Solar1.png';" height="300" width="300"/></div>
+        
+        <div class="image-container"><img id="wind" src="img/Wind1.png" onclick="this.src='img/Wind2.png';" onmouseout="this.src='img/Wind1.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="biomass" src="img/Biomass1.png" onclick="this.src='img/Biomass2.png';" onmouseout="this.src='img/Biomass1.png';" height="300" width="300"/></div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img id="trr" src="img/trr.png" onmouseover="this.src='img/sqr.png';" onmouseout="this.src='img/trr.png';" height="300" width="300"/></div>
-        <div class="image-container"><img id="sqr" src="img/sqr.png" onmouseover="this.src='img/her.png';" onmouseout="this.src='img/sqr.png';" height="300" width="300"/></div>
-        <div class="image-container"><img id="her" src="img/her.png" onmouseover="this.src='img/cir.png';" onmouseout="this.src='img/her.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="coal" src="img/Coal1.png" onclick="this.src='img/Coal2.png';" onmouseout="this.src='img/Coal1.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="oil" src="img/Oil1.png" onclick="this.src='img/Oil2.png';" onmouseout="this.src='img/Oil1.png';" height="300" width="300"/></div>
+        <div class="image-container"><img id="nuclear" src="img/Nuclear1.png" onclick="this.src='img/Nuclear2.png';" onmouseout="this.src='img/Nuclear1.png';" height="300" width="300"/></div>
     </div>
 
     <script>
-        var sound1 = new buzz.sound("sound/FingerSnap.mp3");
-        var sound2 = new buzz.sound("sound/WindRush.mp3");
+        var sound1 = new buzz.sound("sound/Hydro.mp3");
+        var sound2 = new buzz.sound("sound/Tidal.mp3");
+        var sound3 = new buzz.sound("sound/Geothermal.mp3");
+        var sound4 = new buzz.sound("sound/Solar.mp3");
+        var sound5 = new buzz.sound("sound/WindRush.mp3");
+        var sound6 = new buzz.sound("sound/Biomass.mp3");
+        var sound7 = new buzz.sound("sound/Coal.mp3");
+        var sound8 = new buzz.sound("sound/Oil.mp3");
+        var sound9 = new buzz.sound("sound/Nuclear.mp3");
 
         window.onload = function(){
-            document.getElementById('wd1').addEventListener('mouseover', function () {sound2.play();});
-            document.getElementById('wd1').addEventListener('mouseout', function () {sound2.play();});
-            document.getElementById('wd2').addEventListener('mouseover', function () {sound2.play();});
-            document.getElementById('wd2').addEventListener('mouseout', function () {sound2.play();});
-            document.getElementById('squ').addEventListener('click', function () {sound1.play();});
-            document.getElementById('hex').addEventListener('click', function () {sound1.play();});
-            document.getElementById('rec').addEventListener('click', function () {sound1.play();});
-            document.getElementById('sta').addEventListener('click', function () {sound1.play();});
-            document.getElementById('trr').addEventListener('click', function () {sound1.play();});
-            document.getElementById('sqr').addEventListener('click', function () {sound1.play();});
-            document.getElementById('her').addEventListener('click', function () {sound1.play();});
+            document.getElementById('hydro').addEventListener('click', function () {sound1.play();});
+            document.getElementById('tidal').addEventListener('click', function () {sound2.play();});
+            document.getElementById('geothermal').addEventListener('click', function () {sound3.play();});
+            document.getElementById('solar').addEventListener('click', function () {sound4.play();});
+            document.getElementById('wind').addEventListener('click', function () {sound5.play();});
+            document.getElementById('wind').addEventListener('mouseout', function () {sound5.play();});
+            document.getElementById('biomass').addEventListener('click', function () {sound6.play();});
+            document.getElementById('coal').addEventListener('click', function () {sound7.play();});
+            document.getElementById('oil').addEventListener('click', function () {sound8.play();});
+            document.getElementById('nuclear').addEventListener('click', function () {sound9.play();});
         };
     </script>
 
